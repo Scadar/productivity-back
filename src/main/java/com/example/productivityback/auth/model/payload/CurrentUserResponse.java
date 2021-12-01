@@ -4,6 +4,7 @@ import com.example.productivityback.auth.model.Role;
 import com.example.productivityback.auth.model.User;
 import lombok.Getter;
 
+import java.time.Instant;
 import java.util.Set;
 
 @Getter
@@ -17,6 +18,7 @@ public class CurrentUserResponse {
     private final Boolean active;
     private final Set<Role> roles;
     private final Boolean isEmailVerified;
+    private final Instant createdAt;
 
     public CurrentUserResponse(User user) {
         this.id = user.getId();
@@ -27,5 +29,6 @@ public class CurrentUserResponse {
         this.active = user.getActive();
         this.roles = user.getRoles();
         this.isEmailVerified = user.getIsEmailVerified();
+        this.createdAt = user.getCreatedAt();
     }
 }

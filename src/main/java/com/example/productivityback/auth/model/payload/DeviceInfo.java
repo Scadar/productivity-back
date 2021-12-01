@@ -21,7 +21,7 @@ public class DeviceInfo {
 
     @NotNull(message = "Device type cannot be null")
     @ApiModelProperty(value = "Device type Android/iOS", required = true, dataType = "string", allowableValues =
-            "DEVICE_TYPE_ANDROID, DEVICE_TYPE_IOS")
+            "DEVICE_TYPE_ANDROID, DEVICE_TYPE_IOS, DEVICE_TYPE_DESKTOP")
     private DeviceType deviceType;
 
     @NullOrNotBlank(message = "Device notification token can be null but not blank")

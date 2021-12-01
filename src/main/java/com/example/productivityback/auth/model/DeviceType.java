@@ -11,4 +11,8 @@ public enum DeviceType {
      * IOS device type
      */
     DEVICE_TYPE_IOS,
+    /**
+     * Desktop device type
+     */
+    DEVICE_TYPE_DESKTOP,
 }
